@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- give permiston to call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MADD"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin_Agent.Admin_agent_update"
+            android:exported="false" />
+        <!-- Start of Admin -->
+        <activity
+            android:name=".Admin_Agent.AdminAllAgents"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Agent.Admin_Agent_Add"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Agent.Admin_Agent_single"
+            android:exported="false" /> <!-- end of Admin -->
+        <!-- Start of User agents -->
+        <activity
+            android:name=".Client_Agent.Client_Agent_single"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Agent.Client_Agent_All"
+            android:exported="false" />
+
+        <!-- end of User agents -->
+
+
+        <!-- Start of home page -->
+        <activity
+            android:name=".ClientMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+        <!-- end of home page -->
+
+
+        <!-- Start of log,sign,splash -->
+        <activity
+            android:name=".screens.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

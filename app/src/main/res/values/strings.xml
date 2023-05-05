@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">MADD</string>
+
+    <!-- Log in  -->
+    <string name="email_hint">Type your Email</string>
+    <string name="password_hint">Type Your Password</string>
+    <string name="btn_logIn_text">Log In</string>
+    <string name="not_registered_text">Not Registered Yet, Sign Up!</string>
+    <!-- Log in  -->
+
+
+    <!-- Sign Up  -->
+    <!-- <string name="email_hint">Type your Email</string>   -->
+    <!-- <string name="password_hint">Type Your Password</string>    -->
+    <string name="Re_password_hint">Retype Your Password</string>
+    <string name="btn_SignUp_text">Sign Up</string>
+    <string name="already_registered_text">Already Registered , Sign In !</string>
+    <!-- Sign Up -->
+
+
+    <!-- logo , profile , searchBar  -->
+    <string name="logo_description">Logo for the app</string>
+    <string name="profile_description">Profile image</string>
+    <string name="search_description">Search image</string>
+    <string name="search_hint">Search</string>
+    <string name="searchBar">second_row</string>
+    <!-- logo , profile , searchBar -->
+
+
+    <!-- menu  -->
+    <string name="btnHostal">hostals</string>
+    <string name="btnagents">agents</string>
+    <string name="btnaMap">Map</string>
+    <string name="btnaFeedBack">FeedBack</string>
+    <string name="btnaProfile">Profile</string>
+    <!-- menu  -->
+
+
+
+
+
+    <!--  agent  -->
+    <!-- all agents  -->
+    <string name="agents_image_description">Agents image</string>
+    <string name="agents_name">Name: %1$s</string>
+    <string name="agents_email">Email: %1$s</string>
+    <string name="agents_phone">Phone: %1$s</string>
+    <string name="btnViewAgent">View</string>
+    <string name="btnDeleteAgent">Delete</string>
+    <string name="AgentsTag">Agents</string>
+    <string name="NewAgentsTag">New</string>
+
+    <!-- all agents  -->
+    <!--  <string name="agents_image_description">Agents image</string>   -->
+    <string name="single_txtAgentName">Agent Name</string>
+    <string name="single_txtAgentEmail">Agent Email</string>
+    <string name="single_txtAgentPhone">Agent Phone</string>
+    <string name="single_txtAgentDescription">Description</string>
+    <string name="single_call">Call</string>single_massage
+    <string name="single_massage">Massage</string>
+    <string name="Agent_tag">Agent</string>
+
+    <string name="Welcome">Welcome</string>
+    <string name="login_text">Login to continue</string>
+    <string name="Singin_Text">Sing in to Continue</string>
+
+    <string name="EditAgent">Edit</string>
+    <string name="Agent_Add_BTN">Add</string>
+    <string name="Agent_Admin_add_button">Add</string>
+
+    <string name="hint_Agent_add_name">Enter name</string>
+    <string name="hint_Agent_add_Email">Enter Email</string>
+    <string name="hint_Agent_add_Phone">Enter Phone</string>
+    <string name="hint_Agent_add_Description">Enter Description</string>
+    <string name="Update_Agent">Update</string>
+    <string name="NAme">Name : </string>
+    <string name="EEmail">Email :</string>
+    <string name="PPone">Phone : </string>
+    <string name="DDescription">Description :</string>
+    <!--  agent   -->
+
+
+
+
+
+</resources>
+
+
+
