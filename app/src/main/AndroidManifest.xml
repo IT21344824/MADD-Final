@@ -16,6 +16,21 @@
         android:theme="@style/Theme.MADD"
         tools:targetApi="31">
         <activity
+            android:name=".screens.ProfileCLientMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.ProfileMainActivity"
+            android:exported="false" /> <!-- start of feed back -->
+        <activity
+            android:name=".Feed_Back.Feed_Back_Update"
+            android:exported="false" />
+        <activity
+            android:name=".Feed_Back.Feed_Back_All"
+            android:exported="false" />
+        <activity
+            android:name=".Feed_Back.FeedBackaAdd"
+            android:exported="false" />
+        <activity
             android:name=".Admin_Agent.Admin_agent_update"
             android:exported="false" />
         <!-- Start of Admin -->

@@ -7,9 +7,7 @@ import android.widget.Toast
 import com.example.madd.AdminMainActivity
 import com.example.madd.ClientMainActivity
 
-import com.example.madd.R
 import com.example.madd.databinding.ActivityLoginBinding
-import com.example.madd.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -98,7 +96,7 @@ class LoginActivity : AppCompatActivity() {
                     val intent = when (role) {
                         "admin" -> Intent(this@LoginActivity, AdminMainActivity::class.java)
                         "user" -> Intent(this@LoginActivity, ClientMainActivity::class.java)
-                        else -> Intent(this@LoginActivity, AdminMainActivity::class.java)
+                        else -> Intent(this@LoginActivity, ClientMainActivity::class.java)
                     }
 
                     startActivity(intent)

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.madd.Admin_Agent.AdminAllAgents
+import com.example.madd.Feed_Back.Feed_Back_All
+import com.example.madd.screens.ProfileMainActivity
 
 
 class AdminMainActivity : AppCompatActivity() {
@@ -17,6 +19,19 @@ class AdminMainActivity : AppCompatActivity() {
             val intent = Intent(this, AdminAllAgents::class.java)
             startActivity(intent)
         }
+
+        val feedBackButton = findViewById<Button>(R.id.button4)
+        feedBackButton.setOnClickListener {
+            val intent = Intent(this, Feed_Back_All::class.java)
+            startActivity(intent)
+
+        }
+        val profileButton= findViewById<Button>(R.id.profileBtn)
+        profileButton.setOnClickListener {
+            val intent = Intent(this, ProfileMainActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
     }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feed_Back.FeedBackaAdd"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_grey"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="72dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="200dp"
+            android:layout_toStartOf="@+id/profile"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo2" />
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/profile_description"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <!-- Feedback form -->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_form"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/AddNameFeed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/name_client" />
+
+            <EditText
+                android:id="@+id/AddEmailFeed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/email_client" />
+
+            <EditText
+                android:id="@+id/AddMessageFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message_client"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/FeedBackAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit_feed"
+                android:text="@string/submit_feed_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

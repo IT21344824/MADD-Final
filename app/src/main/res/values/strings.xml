@@ -79,6 +79,37 @@
     <string name="DDescription">Description :</string>
     <!--  agent   -->
 
+    <!-- feedback -->
+    <string name="feedback_form">Feedback Form</string>
+    <string name="name_client">Name</string>
+    <string name="email_client">Email</string>
+    <string name="message_client">Message</string>
+    <string name="submit_feed_button">Submit</string>
+    <string name="large_text"></string>
+    <string name="Feed_back_">Hint_feed_List</string>
+    <string name="Hint_feed_list">Feed Backs</string>
+    <string name="Feed_Back_hint">Feed Backs</string>
+    <string name="Hint_feed_back_id">Feed BackId</string>
+    <string name="view_btn_feed">View</string>
+    <string name="hint_update_feed">Update FeedBack</string>
+
+    <!-- profile agent-->
+    <string name="User_Name_hint">Nick Roy</string>
+    <string name="User_email_hint">NickR@gmail.com</string>
+    <string name="Email_hint">Email</string>
+    <string name="Email_text_hint">NickR@gmail.com</string>
+    <string name="Password_hint">Password</string>
+    <string name="Password_text_hint">**********</string>
+    <string name="Mobile_Number_Hint">Mobile Number</string>
+    <string name="Mobile_text_hint">76 679  8989</string>
+    <string name="Settings_hint">Settings</string>
+    <string name="Log_Out_hint">Log Out</string>
+    <string name="Name_Hint">Name_Hint</string>
+    <string name="name">name_Hint</string>
+    <string name="name_Hint">name</string>
+    <string name="Name1_Hint">Name</string>
+    <string name="Hint_Delete_Feed">Delete</string>
+    <string name="Hint_Delete_client">Delete</string>
 
 
 
