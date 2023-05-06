@@ -6,13 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.madd.R
+import com.google.firebase.database.FirebaseDatabase
 
 
 class Feed_Back_MyAdapter(private val context: ArrayList<Feed_Back_Data>) :
-
     RecyclerView.Adapter<Feed_Back_MyAdapter.MyViewHolder>() {
 
 
@@ -40,8 +42,26 @@ class Feed_Back_MyAdapter(private val context: ArrayList<Feed_Back_Data>) :
             onItemClickListener?.onItemClick(position)
             viewClientClickListener?.onViewClientClick(currentItem, currentItem.key)
         }
+        holder.Delete_FeedBack.setOnClickListener {
+            val key = currentItem.key
+            if (key != null) {
+                val alertDialog = AlertDialog.Builder(holder.itemView.context)
+                alertDialog.setTitle("Delete feedback")
+                alertDialog.setMessage("Are you sure you want to delete this comment?")
+                alertDialog.setPositiveButton("Yes") { _, _ ->
+                    val dbRef = FirebaseDatabase.getInstance().getReference("FeedBacks").child(key)
+                    dbRef.removeValue()
+                    Toast.makeText(holder.itemView.context, "FeedBack deleted successfully", Toast.LENGTH_SHORT).show()
+                }
+                alertDialog.setNegativeButton("No") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                alertDialog.show()
+            }
+        }
 
     }
+
     interface OnDeleteClientClickListener {
         fun onDeleteClientClick(feedbackData: Feed_Back_Data, feedbackKey: String?)
     }
@@ -80,6 +100,7 @@ class Feed_Back_MyAdapter(private val context: ArrayList<Feed_Back_Data>) :
         val message: TextView = itemView.findViewById(R.id.feedb_message)
         // val description: TextView = itemView.findViewById(R.id.agents_Description)
         val viewClient: Button = itemView.findViewById(R.id.viewClientFeedBack)
+        val Delete_FeedBack: Button = itemView.findViewById(R.id.FeedDeleteButton)
     }
 }
 

@@ -89,6 +89,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/submit_feed"
                 android:text="@string/submit_feed_button" />
+
+
         </LinearLayout>
     </ScrollView>
 

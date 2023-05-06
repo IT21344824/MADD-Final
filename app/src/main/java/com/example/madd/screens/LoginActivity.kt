@@ -96,7 +96,7 @@ class LoginActivity : AppCompatActivity() {
                     val intent = when (role) {
                         "admin" -> Intent(this@LoginActivity, AdminMainActivity::class.java)
                         "user" -> Intent(this@LoginActivity, ClientMainActivity::class.java)
-                        else -> Intent(this@LoginActivity, ClientMainActivity::class.java)
+                        else -> Intent(this@LoginActivity, AdminMainActivity::class.java)
                     }
 
                     startActivity(intent)
