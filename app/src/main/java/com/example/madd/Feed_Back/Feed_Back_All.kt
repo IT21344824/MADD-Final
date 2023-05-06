@@ -5,12 +5,15 @@ package com.example.madd.Feed_Back
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.madd.Admin_Agent.Admin_Agent_Add
 import com.example.madd.Client_Agent.ClientAgents_data
+import com.example.madd.R
 import com.example.madd.databinding.ActivityFeedBackAllBinding
 import com.google.firebase.database.*
 
@@ -36,6 +39,12 @@ class Feed_Back_All : AppCompatActivity() {
         myAdapter = Feed_Back_MyAdapter(userArrayList)
         userRecyclerView.adapter = myAdapter
         getFeedBackData()
+
+        val feedBackAddNew = findViewById<Button>(R.id.add_feeddback)
+        feedBackAddNew.setOnClickListener {
+            val intent = Intent(this, FeedBackaAdd::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getFeedBackData() {

@@ -110,8 +110,10 @@
     <string name="Name1_Hint">Name</string>
     <string name="Hint_Delete_Feed">Delete</string>
     <string name="Hint_Delete_client">Delete</string>
-
-
+    <string name="Hint_feed_message">message</string>
+    <string name="Feed_Back_message_hint">message</string>
+    <string name="editfeed">Edit</string>
+    <string name="single_txtFeedDescription">message</string>
 
 
 </resources>

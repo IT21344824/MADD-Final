@@ -27,9 +27,9 @@ class Feed_Back_Update : AppCompatActivity() {
 
         val key = intent.getStringExtra("key") ?: ""
         // retrieve the key from the intent
-        // Log.d("Update_Agentkey", "key: ${key}")
+        // Log.d("Update_feedbackkey", "key: ${key}")
 
-        // get a reference to the agent with the given key
+        // get a reference to the feedback with the given key
         firebaseStorage = FirebaseStorage.getInstance()
         databaseRef = FirebaseDatabase.getInstance().reference.child("Agents").child(key)
 
@@ -48,6 +48,22 @@ class Feed_Back_Update : AppCompatActivity() {
                 binding.FeedBackUpdateButton.isEnabled = true
                 return@setOnClickListener
             }
+            // Check if email is in the correct format
+            val emailRegex = Regex("^\\S+@\\S+\\.\\S+\$")
+            if (!email.matches(emailRegex)) {
+                Toast.makeText(this, "Please enter a valid email address", Toast.LENGTH_SHORT).show()
+                // Enable the button
+                binding.FeedBackUpdateButton.isEnabled = true
+                return@setOnClickListener
+            }
+            val messageRegex = Regex("\"^[\\\\w\\\\s,.!?-]*\$\"")
+            if (!message.matches(messageRegex)) {
+                Toast.makeText(this, "Please enter ", Toast.LENGTH_SHORT).show()
+                // Enable the button
+                binding.FeedBackUpdateButton.isEnabled = true
+                return@setOnClickListener
+            }
+
 
 
             // Create a hashmap to hold the updated values
@@ -67,22 +83,7 @@ class Feed_Back_Update : AppCompatActivity() {
                 }
             }
         }
-        // Delete feedback button click event
-        binding.FeedDeleteButton.setOnClickListener {
-            // Disable the button
-            binding.FeedDeleteButton.isEnabled = false
 
-            // Delete the child with the given key
-            databaseRef.removeValue().addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    Toast.makeText(this, "Feedback deleted successfully", Toast.LENGTH_SHORT).show()
-                    finish()
-                } else {
-                    Toast.makeText(this, "Failed to delete feedback", Toast.LENGTH_SHORT).show()
-                    binding.FeedDeleteButton.isEnabled = true
-                }
-            }
-        }
         data class Feed(
             val name: String = "", val Email: String = "",
             val message: String = ""

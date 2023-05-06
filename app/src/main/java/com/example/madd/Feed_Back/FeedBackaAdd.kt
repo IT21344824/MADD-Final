@@ -1,12 +1,10 @@
 package com.example.madd.Feed_Back
 
-import android.content.Intent
-import android.net.Uri
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Message
 import android.widget.Toast
-import com.example.madd.databinding.ActivityFeedBackAllBinding
 import com.example.madd.databinding.ActivityFeedBackaAddBinding
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DatabaseReference

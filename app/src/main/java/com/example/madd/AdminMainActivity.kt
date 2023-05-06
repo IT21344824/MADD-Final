@@ -21,12 +21,12 @@ class AdminMainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val feedBackButton = findViewById<Button>(R.id.button4)
+     /*   val feedBackButton = findViewById<Button>(R.id.button4)
         feedBackButton.setOnClickListener {
             val intent = Intent(this, Feed_Back_All::class.java)
             startActivity(intent)
 
-        }
+        }*/
         val profileButton= findViewById<Button>(R.id.profileBtn)
         profileButton.setOnClickListener {
             val intent = Intent(this, ProfileMainActivity::class.java)
