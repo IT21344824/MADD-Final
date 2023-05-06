@@ -30,6 +30,26 @@
         <activity
             android:name=".Feed_Back.FeedBackaAdd"
             android:exported="false" />
+
+
+<!--        //Admin Hostel//-->
+
+        <activity
+            android:name=".Admin_Hostel.Admin_hostel_update"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Hostel.AdminAllHostels"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Hostel.Admin_Hostel_single"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Hostel.Admin_Hostel_Add"
+            android:exported="false" />
+
+
+<!--        //Admin Agent//-->
+
         <activity
             android:name=".Admin_Agent.Admin_agent_update"
             android:exported="false" />

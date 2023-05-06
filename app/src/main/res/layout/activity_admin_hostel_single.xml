@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Hostel.Admin_Hostel_single">
+    <RelativeLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_grey"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="72dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="200dp"
+            android:layout_toStartOf="@+id/profile"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo2" />
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/profile_description"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/third_row"
+        android:layout_width="410dp"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_row"
+        app:layout_constraintVertical_bias="0.63">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="483dp"
+            android:orientation="vertical">
+
+            <!-- First LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:orientation="horizontal">
+
+                <!-- First LinearLayout contents -->
+                <ImageView
+                    android:id="@+id/Admin_Single_Hos_img"
+                    android:layout_width="375dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="Hos_image_description"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_add_home_24" />
+
+            </LinearLayout>
+
+            <!-- Second LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="243dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:orientation="horizontal">
+
+                <!-- Second LinearLayout contents -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Admin_Single_Hos_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Hostel Name"
+                        android:textSize="18sp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/Admin_Single_Hos_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Hostel Phone"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Admin_Single_Hos_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/single_txtAgentDescription"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:gravity="bottom"
+
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/Hos_Edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green_round_bg"
+                            android:text="@string/EditAgent"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
