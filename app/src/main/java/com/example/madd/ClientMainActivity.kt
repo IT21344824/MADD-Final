@@ -7,6 +7,7 @@ import android.widget.Button
 import com.example.madd.Client_Agent.Client_Agent_All
 import com.example.madd.Feed_Back.FeedBackaAdd
 import com.example.madd.Feed_Back.Feed_Back_All
+import com.example.madd.Mymap.MainActivity
 import com.example.madd.screens.ProfileCLientMainActivity
 
 class ClientMainActivity : AppCompatActivity() {
@@ -27,6 +28,11 @@ class ClientMainActivity : AppCompatActivity() {
         val profileButton= findViewById<Button>(R.id.button5)
         profileButton.setOnClickListener {
             val intent = Intent(this, ProfileCLientMainActivity::class.java)
+            startActivity(intent)
+        }
+        val MapButton= findViewById<Button>(R.id.button3)
+        MapButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
