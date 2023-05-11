@@ -50,6 +50,21 @@
             android:name=".Admin_Hostel.Admin_Hostel_Add"
             android:exported="false" />
 
+<!--         //client_hostel//-->
+
+        <activity
+            android:name=".Client_Hostel.Client_Hostel_singel"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Hostel.ClientHostel_data"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Hostel.Client_Hostel_MyAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Hostel.Client_Hostel_All"
+            android:exported="false" />
+
 
 <!--        //Admin Agent//-->
 

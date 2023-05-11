@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client_Hostel.Client_Hostel_singel">
+
+    <RelativeLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_grey"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="72dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="200dp"
+            android:layout_toStartOf="@+id/profile"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo2" />
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/profile_description"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/third_row"
+        android:layout_width="376dp"
+        android:layout_height="453dp"
+        android:background="@drawable/border_radious"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_row"
+        app:layout_constraintVertical_bias="0.362">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="483dp"
+            android:orientation="vertical">
+
+            <!-- First LinearLayout -->
+            <LinearLayout
+                android:layout_width="281dp"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <!-- First LinearLayout contents -->
+                <ImageView
+                    android:id="@+id/Hos_Single_img"
+                    android:layout_width="262dp"
+                    android:layout_height="154dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/border_radious"
+                    android:padding="10dp"
+                    android:src="@drawable/agent_profile" />
+
+            </LinearLayout>
+
+            <!-- Second LinearLayout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="243dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:orientation="horizontal">
+
+                <!-- Second LinearLayout contents -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="307dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:paddingTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/admin_Single_Hos_name_text"
+                            android:layout_width="125dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/NAme"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/Hos_single_name"
+                            android:layout_width="183dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/single_txtAgentName"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="307dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:id="@+id/admin_Single_Hos_phone_text"
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/PPone"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/Hos_single_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Hostel contact"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="307dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:id="@+id/admin_Single_Hos_Dis_text"
+                            android:layout_width="127dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/DDescription"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/Hos_single_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/single_txtAgentDescription"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

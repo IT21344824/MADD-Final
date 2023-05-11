@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.madd.Client_Agent.Client_Agent_All
+import com.example.madd.Client_Hostel.Client_Hostel_All
 import com.example.madd.Feed_Back.FeedBackaAdd
 import com.example.madd.Feed_Back.Feed_Back_All
 import com.example.madd.Mymap.MainActivity
@@ -33,6 +34,11 @@ class ClientMainActivity : AppCompatActivity() {
         val MapButton= findViewById<Button>(R.id.button3)
         MapButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        val HosButton= findViewById<Button>(R.id.Hostals)
+        HosButton.setOnClickListener {
+            val intent = Intent(this, Client_Hostel_All::class.java)
             startActivity(intent)
         }
     }
